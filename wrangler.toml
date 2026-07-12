@@ -1,0 +1,21 @@
+name = "builddesk-portfolio"
+main = ".open-next/worker.js"
+compatibility_date = "2026-07-12"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "builddesk-content"
+database_id = "replace-with-cloudflare-d1-id"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "builddesk-media"
+
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://builddesk-portfolio.workers.dev"
