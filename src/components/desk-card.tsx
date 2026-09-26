@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Route } from "next";
 import type { LucideIcon } from "lucide-react";
 
 export function DeskCard({
@@ -8,7 +9,7 @@ export function DeskCard({
   icon: Icon,
   tone = "surface",
 }: {
-  href: string;
+  href: Route;
   label: string;
   note: string;
   icon: LucideIcon;

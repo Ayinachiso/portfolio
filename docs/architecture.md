@@ -5,7 +5,14 @@ BuildDesk is the working name for Ayinachiso Nweze's portfolio experience. The p
 ## Deployment
 
 - Framework: Next.js App Router, React, TypeScript, Tailwind CSS.
-- Target: Cloudflare Workers through `@opennextjs/cloudflare`.
+- Current deployment: Vercel using `npm ci` and `npm run build`. Commit `package-lock.json` to keep dependency versions reproducible.
+- Cloudflare deployment tooling is disabled: `@opennextjs/cloudflare`, `wrangler`, and their npm scripts have been removed. `wrangler.toml` is retained for a possible future Cloudflare deployment.
+- Set `NEXT_PUBLIC_SITE_URL` in Vercel to the public site URL.
+
+## Planned Cloudflare Backend
+
+The following describes the original backend plan; these services are not enabled by the current Vercel deployment.
+
 - Structured data: Cloudflare D1.
 - Uploaded media: Cloudflare R2.
 - Initial URL: Cloudflare Workers free deployment URL through `NEXT_PUBLIC_SITE_URL`.
