@@ -8,6 +8,7 @@ BuildDesk is the working name for Ayinachiso Nweze's portfolio experience. The p
 - Current deployment: Vercel using `npm ci` and `npm run build`. Commit `package-lock.json` to keep dependency versions reproducible.
 - Cloudflare deployment tooling is disabled: `@opennextjs/cloudflare`, `wrangler`, and their npm scripts have been removed. `wrangler.toml` is retained for a possible future Cloudflare deployment.
 - Set `NEXT_PUBLIC_SITE_URL` in Vercel to the public site URL.
+- Empty or invalid site URLs fall back to `VERCEL_PROJECT_PRODUCTION_URL`, then `VERCEL_URL`, then `http://localhost:3000` for local development. Metadata, sitemap, and robots use the same URL resolver.
 
 ## Planned Cloudflare Backend
 

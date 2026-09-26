@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Fraunces, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeScript } from "@/components/theme-script";
+import { getSiteUrl } from "@/lib/site-url";
 
 const sans = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://builddesk-portfolio.workers.dev"),
+  metadataBase: new URL(getSiteUrl()),
   title: {
     default: "Ayinachiso Nweze - Full-Stack Developer",
     template: "%s - Ayinachiso Nweze",

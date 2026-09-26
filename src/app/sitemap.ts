@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
 import { primaryRoutes } from "@/lib/routes";
 import { projects } from "@/lib/projects";
+import { getSiteUrl } from "@/lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://builddesk-portfolio.workers.dev";
+  const siteUrl = getSiteUrl();
 
   return [
     ...primaryRoutes.map((route) => ({
