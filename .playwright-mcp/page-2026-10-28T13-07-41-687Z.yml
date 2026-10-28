@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - text: Website development & management
+  - paragraph [ref=e2]: YINOVA TECH
+  - paragraph [ref=e3]: Seven distinct organisations. One connected digital experience.
+  - paragraph [ref=e4]: Dear Sir,
+  - paragraph [ref=e5]: Thank you for taking the time to share your vision for the seven websites.
+  - paragraph [ref=e6]: I've attached my proposal outlining the development approach, project investment, and ongoing website management. I've also attached my CV for a little more context on my experience.
+  - paragraph [ref=e7]: I'd also love for you to explore some of my previous work to get a better sense of my design and development approach.
+  - text: Included for your review
+  - strong [ref=e8]: Website proposal PDF
+  - text: ·
+  - strong [ref=e9]: CV PDF
+  - link "VIEW MY PORTFOLIO →" [ref=e10] [cursor=pointer]:
+    - /url: https://bit.ly/NwezeAyinachiso
+  - paragraph [ref=e11]: I look forward to hearing your thoughts.
+  - paragraph [ref=e12]: Best regards,
+  - paragraph [ref=e13]: Ayinachiso Nweze
+  - paragraph [ref=e14]: Full-stack Developer · Yinova Tech
+  - paragraph [ref=e15]:
+    - link "ayinachisonweze@gmail.com" [ref=e16] [cursor=pointer]:
+      - /url: mailto:ayinachisonweze@gmail.com
+  - text: YINOVA TECH | WEBSITE DEVELOPMENT PROPOSAL
