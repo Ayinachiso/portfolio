@@ -1,0 +1,15 @@
+.corners { display: contents; }
+.plant { position: absolute; z-index: 6; bottom: 0; width: 180px; border: 0; padding: 0; background-color: transparent; cursor: pointer; transition: filter 180ms; }
+.plant:hover { filter: brightness(1.12); }
+.plant:focus-visible { outline: 3px dashed rgb(var(--secondary)); outline-offset: -5px; border-radius: 16px; }
+.left { left: 0; height: 267px; background-image: url('/images/desk-details.webp'); background-repeat: no-repeat; background-size: 444.444% 100%; background-position: left bottom; }
+.right { right: 0; height: 180px; background-image: url('/images/desk-peace-lily.webp'); background-repeat: no-repeat; background-size: contain; background-position: right bottom; }
+.stage { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 100; pointer-events: none; }
+@media (max-width: 1100px) {
+  .corners { display: block; position: relative; height: 110px; margin: 5px -4.35% -24px; }
+  .plant { width: 90px; }
+  .left { height: 134px; }
+  .right { height: 100px; }
+}
+@media (max-width: 700px) { .corners { margin: 5px -20px -22px; } }
+@media (prefers-reduced-motion: reduce) { .plant { transition: none; } }

@@ -43,4 +43,4 @@ The following describes the original backend plan; these services are not enable
 - LinkedIn, GitHub, email, and X are primary placeholders.
 - Instagram and TikTok can appear as secondary links.
 - Family photographs and personal celebration media remain placeholders until approved.
-- The private unreleased ISWIS dilemma-management website is excluded.
+- ISWIS may be described as an independent, uncommissioned project. Show only the public submission experience; keep its admin interface private and do not imply podcast adoption.

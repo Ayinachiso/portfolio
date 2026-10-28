@@ -1,0 +1,13 @@
+.card { position: relative; align-self: stretch; min-width: 0; overflow: hidden; padding: 36px 28px 28px; border: 3px solid rgb(var(--ink)); border-radius: 23px 18px 25px 19px; background: #f5c64b; box-shadow: 5px 6px 0 rgb(var(--ink)); transform: rotate(.7deg); }
+.card::after { position: absolute; right: -36px; bottom: -72px; width: 190px; height: 190px; border: 2px solid rgb(var(--ink) / .22); border-radius: 48% 52% 45% 55%; content: ""; transform: rotate(-24deg); }
+.scribble { position: absolute; top: 14px; right: 17px; padding: 7px 10px; border: 2px solid rgb(var(--ink)); border-radius: 5px 8px 4px 7px; background: rgb(var(--paper)); font: 700 10px var(--font-mono), monospace; letter-spacing: .07em; text-transform: uppercase; transform: rotate(4deg); }
+.icon { display: grid; width: 70px; height: 70px; place-items: center; margin: 7px 0 22px; border: 2px solid rgb(var(--ink)); border-radius: 17px 13px 20px 11px; background: rgb(var(--paper)); box-shadow: 3px 4px 0 rgb(var(--ink)); transform: rotate(-5deg); }
+.eyebrow { margin: 0 0 8px; font: 800 11px var(--font-mono), monospace; letter-spacing: .13em; text-transform: uppercase; }
+.card h2 { max-width: 380px; margin: 0; font: 850 clamp(29px, 3vw, 42px)/.98 var(--font-display), Georgia, serif; letter-spacing: -.05em; }
+.copy { position: relative; z-index: 1; max-width: 380px; margin: 14px 0 25px; font-size: 15px; font-weight: 600; line-height: 1.5; }
+.actions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 10px; }
+.actions a { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 45px; padding: 10px 15px; border: 2px solid rgb(var(--ink)); border-radius: 24px; background: rgb(var(--paper)); box-shadow: 2px 3px 0 rgb(var(--ink)); font-size: 14px; font-weight: 900; transition: transform 150ms, box-shadow 150ms; }
+.actions a:hover { transform: translateY(-2px) rotate(-1deg); box-shadow: 3px 5px 0 rgb(var(--ink)); }
+:global([data-theme="dark"]) .card { background: #d1a844; color: #211b16; }
+@media (max-width: 700px) { .card { padding: 30px 23px 24px; } .card h2 { max-width: 300px; } .copy { font-size: 14px; } }
+@media (prefers-reduced-motion: reduce) { .actions a { transition: none; } }
